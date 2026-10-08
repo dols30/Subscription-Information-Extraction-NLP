@@ -4,6 +4,13 @@ A named-entity recognition project for extracting subscription details from natu
 
 The original trained model was integrated into the [Due iOS app](https://github.com/dols30/Due).
 
+## Published on Kaggle
+
+- [Notebook: NLP Subscription Information Extraction-DistilBERT](https://www.kaggle.com/code/bashcode223/nlp-subscription-information-extraction-distilbert?scriptVersionId=356506008)
+- [Dataset: Due Subscription Information Extraction](https://www.kaggle.com/datasets/bashcode223/due-subscription-information-extraction)
+
+The GitHub notebook mirrors Kaggle version 1 (script version `356506008`). The bundled dataset ZIP contains the same files as the published Kaggle dataset version 1.
+
 ## Files
 
 - [Subscription_Information_Extraction_NLP.ipynb](Subscription_Information_Extraction_NLP.ipynb): preprocessing, fine-tuning, threshold selection, evaluation, and example inference.
@@ -29,9 +36,10 @@ The original Due v2 experiment achieved **97.34% entity F1** and **85.71% comple
 
 ## Run on Kaggle
 
-1. Upload `Due-Subscription-Dataset.zip` as a Kaggle Dataset.
-2. Import the notebook and attach the dataset using **Add Input**.
-3. Enable **Internet**, select a **GPU**, and run all cells. Restart the kernel if the setup cell requests it.
+1. Open the published Kaggle notebook above and choose **Copy & Edit**. Its dataset is already attached.
+2. Enable **Internet**, select a **GPU**, and run all cells. Restart the kernel if the setup cell requests it.
+
+To import the GitHub notebook separately, attach the published dataset using **Add Input**.
 
 The notebook discovers the attached dataset automatically. New checkpoints, metrics, predictions, and charts are saved under `/kaggle/working/due-<timestamp>/`.
 
@@ -48,5 +56,9 @@ python -m jupyter lab Subscription_Information_Extraction_NLP.ipynb
 ```
 
 Choose this environment as the notebook kernel and run the cells in order. The notebook installs its compatible Transformers, Accelerate, and Hugging Face Hub dependencies when needed. It discovers the extracted `dataset/` folder automatically and writes results under `output/`.
+
+## License
+
+[Apache License 2.0](LICENSE), matching the published Kaggle notebook and dataset.
 
 Author: Dol Raj Bashyal
