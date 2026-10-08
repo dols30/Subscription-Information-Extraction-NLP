@@ -1,0 +1,13 @@
+# Local environments and notebook state
+.venv*/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# Extracted input and generated training files
+dataset/
+output/
+checkpoints/
+*.safetensors
+*.mlpackage/
+*.mlmodelc/
