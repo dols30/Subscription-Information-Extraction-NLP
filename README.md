@@ -57,6 +57,6 @@ Choose this environment as the notebook kernel and run the cells in order. The n
 
 ## License
 
-[Apache License 2.0](LICENSE), matching the published Kaggle notebook and dataset.
+[Apache License 2.0](LICENSE).
 
 Author: Dol Raj Bashyal
