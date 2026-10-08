@@ -9,8 +9,6 @@ The original trained model was integrated into the [Due iOS app](https://github.
 - [Notebook: NLP Subscription Information Extraction-DistilBERT](https://www.kaggle.com/code/bashcode223/nlp-subscription-information-extraction-distilbert?scriptVersionId=356506008)
 - [Dataset: Due Subscription Information Extraction](https://www.kaggle.com/datasets/bashcode223/due-subscription-information-extraction)
 
-The GitHub notebook mirrors Kaggle version 1 (script version `356506008`). The bundled dataset ZIP contains the same files as the published Kaggle dataset version 1.
-
 ## Files
 
 - [Subscription_Information_Extraction_NLP.ipynb](Subscription_Information_Extraction_NLP.ipynb): preprocessing, fine-tuning, threshold selection, evaluation, and example inference.
