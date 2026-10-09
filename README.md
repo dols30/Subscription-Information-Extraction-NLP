@@ -6,7 +6,7 @@ The original trained model was integrated into the [Due iOS app](https://github.
 
 ## Published on Kaggle
 
-- [Notebook: NLP Subscription Information Extraction-DistilBERT](https://www.kaggle.com/code/bashcode223/nlp-subscription-information-extraction-distilbert?scriptVersionId=356506008)
+- [View the published notebook: NLP Subscription Information Extraction-DistilBERT](https://www.kaggle.com/code/bashcode223/nlp-subscription-information-extraction-distilbert?scriptVersionId=356506008)
 - [Dataset: Due Subscription Information Extraction](https://www.kaggle.com/datasets/bashcode223/due-subscription-information-extraction)
 
 ## Files
@@ -31,15 +31,6 @@ The notebook reconstructs character-span annotations from the raw CSV, checks da
 DistilBERT base cased is fine-tuned for four epochs using seed 326, batch size 16, learning rate 3e-5, and weight decay 0.01. Development entity F1 selects the checkpoint; development scores also select a confidence threshold. Final evaluation uses exact entity labels and text boundaries.
 
 The original Due v2 experiment achieved **97.34% entity F1** and **85.71% complete-entry accuracy (72/84 descriptions)**. Those are reference results on a small, already evaluated benchmark. The uploaded notebook calculates its own scores when run. Its DistilBERT v1 and GLiNER comparisons use recorded baseline predictions.
-
-## Run on Kaggle
-
-1. Open the published Kaggle notebook above and choose **Copy & Edit**. Its dataset is already attached.
-2. Enable **Internet**, select a **GPU**, and run all cells. Restart the kernel if the setup cell requests it.
-
-To import the GitHub notebook separately, attach the published dataset using **Add Input**.
-
-The notebook discovers the attached dataset automatically. New checkpoints, metrics, predictions, and charts are saved under `/kaggle/working/due-<timestamp>/`.
 
 ## Run locally
 
